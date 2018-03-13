@@ -7,7 +7,7 @@ def character_names
   character_hash = JSON.parse(all_characters)
   character_hash["results"].map {|hash_result| hash_result["name"].downcase}
 end
-
+binding.pry
 def get_character_from_user
   puts "Please enter a Character"
   user_input = gets.chomp
